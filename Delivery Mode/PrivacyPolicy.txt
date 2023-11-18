@@ -1,0 +1,7 @@
+Delivery Mode is an app which, with the user’s permission, connects to the device’s Music app and, upon the device being charged or disconnected, plays and pauses their music respectively, along with providing some music controls for convenience.
+
+On opening the app for the first time, you will be asked if you are happy for Delivery Mode to connect with your app’s Music library. It will not do so unless this is agreed upon. If permission is not granted, the app will not connect with the user’s Music library until either a) permissions are changed in the Settings app or b) the app is re-installed.
+
+We do not collect, store or transmit any data regarding the user or their Music library whatsoever. That said, playing music through the device is subject to Apple’s own Privacy Policy as well as that of any sources you get the music from, such as the iTunes store. We do not have any control over this. Rest assured that our app is designed to function securely and does not compromise the privacy or security of your data. As of 18 November 2023, Apple’s full Privacy Policy can be found at https://www.apple.com/legal/privacy/en-ww/ and the iTunes Store Privacy Policy can be found at https://www.apple.com/legal/privacy/data/en/itunes-store/
+
+If you have any further concerns or questions, you can contact me by emailing simon_debrikasaan@Yahoo.co.uk
