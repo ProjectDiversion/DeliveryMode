@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Delivery_Mode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-Il-uOx" userLabel="Main">
+                                <rect key="frame" x="10" y="30" width="300" height="518"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="QIo-46-GuO" userLabel="Album Artwork">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="259"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Vts-FR-vA2" appends="YES" id="gGZ-n0-EQV"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LPI-KD-TpG" userLabel="Lower">
+                                        <rect key="frame" x="0.0" y="259" width="300" height="259"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zx-6s-aFX" userLabel="Track Info">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="86.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0gk-fc-TBe">
+                                                        <rect key="frame" x="10" y="10" width="280" height="37"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="32"/>
+                                                        <color key="textColor" systemColor="tintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play some music to get started!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uRU-Vf-fnT">
+                                                        <rect key="frame" x="10" y="47" width="280" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0gk-fc-TBe" secondAttribute="trailing" constant="10" id="7jh-31-u9w"/>
+                                                    <constraint firstItem="0gk-fc-TBe" firstAttribute="top" secondItem="3zx-6s-aFX" secondAttribute="top" constant="10" id="cch-vW-gA4"/>
+                                                    <constraint firstItem="uRU-Vf-fnT" firstAttribute="leading" secondItem="3zx-6s-aFX" secondAttribute="leading" constant="10" id="dKV-d8-eV8"/>
+                                                    <constraint firstItem="0gk-fc-TBe" firstAttribute="leading" secondItem="3zx-6s-aFX" secondAttribute="leading" constant="10" id="i2n-1R-aSq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uRU-Vf-fnT" secondAttribute="trailing" constant="10" id="jhk-b4-zn7"/>
+                                                    <constraint firstItem="uRU-Vf-fnT" firstAttribute="top" secondItem="0gk-fc-TBe" secondAttribute="bottom" id="x9D-cm-GfN"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EKD-JN-7wK" userLabel="Playback Buttons">
+                                                <rect key="frame" x="0.0" y="86.5" width="300" height="86"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backward.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NYP-z2-SkN">
+                                                        <rect key="frame" x="0.0" y="2" width="83.5" height="81.5"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="wDs-ag-cwB" appends="YES" id="HIL-6d-kbT"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-Oh-a8v">
+                                                        <rect key="frame" x="108.5" y="1.5" width="83" height="82.5"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="Qwy-BI-GmJ" appends="YES" id="gZG-n1-cC9"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-x8-8Fb">
+                                                        <rect key="frame" x="216.5" y="2" width="83.5" height="81.5"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="3oj-8w-afb" appends="YES" id="Yre-le-GfA"/>
+                                                        </connections>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gb6-d7-a7W" userLabel="Lock">
+                                                <rect key="frame" x="0.0" y="172.5" width="300" height="86.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ByD-r7-Hlb">
+                                                        <rect key="frame" x="0.0" y="0.5" width="100" height="85"/>
+                                                        <color key="tintColor" red="1" green="0.012242017237580227" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <gestureRecognizers/>
+                                                        <imageReference key="image" image="battery.0" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repeat" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ddW-IE-p5v">
+                                                        <rect key="frame" x="100" y="1.5" width="100" height="83.5"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="DqE-gV-Wq5" appends="YES" id="sn7-b0-WmX"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.open.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hgz-4e-zYh">
+                                                        <rect key="frame" x="200" y="0.5" width="100" height="85"/>
+                                                        <color key="tintColor" red="0.0217705778" green="0.76942896839999997" blue="0.041748266540000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="HyO-ph-h95" appends="YES" id="J3w-hn-Ifh"/>
+                                                        </connections>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MAs-Il-uOx" secondAttribute="trailing" constant="10" id="8kK-4v-g3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MAs-Il-uOx" secondAttribute="bottom" constant="20" id="9dC-Zk-SHT"/>
+                            <constraint firstItem="MAs-Il-uOx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Hsa-Fd-oHu"/>
+                            <constraint firstItem="MAs-Il-uOx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="LQx-Dm-d8a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumArtwork" destination="QIo-46-GuO" id="TJC-GB-Yyu"/>
+                        <outlet property="artistOutlet" destination="uRU-Vf-fnT" id="tq0-0L-YCk"/>
+                        <outlet property="batteryStatus" destination="ByD-r7-Hlb" id="lJL-XX-fkJ"/>
+                        <outlet property="lockButton" destination="hgz-4e-zYh" id="Qlw-Mi-nYh"/>
+                        <outlet property="playPauseButton" destination="c8w-Oh-a8v" id="3mg-1g-caK"/>
+                        <outlet property="repeatButton" destination="ddW-IE-p5v" id="Sue-2R-iTq"/>
+                        <outlet property="rewindButton" destination="NYP-z2-SkN" id="DYU-EL-l9m"/>
+                        <outlet property="skipButton" destination="1nh-x8-8Fb" id="iEW-ma-RnD"/>
+                        <outlet property="titleOutlet" destination="0gk-fc-TBe" id="jCV-ro-saE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wDs-ag-cwB">
+                    <connections>
+                        <action selector="rewindButtonPress:" destination="BYZ-38-t0r" id="vtp-wd-Rcu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Qwy-BI-GmJ">
+                    <connections>
+                        <action selector="playPauseButtonPress:" destination="BYZ-38-t0r" id="1Iu-UM-41Z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3oj-8w-afb">
+                    <connections>
+                        <action selector="skipButtonPressed:" destination="BYZ-38-t0r" id="cc8-Rm-DoV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HyO-ph-h95">
+                    <connections>
+                        <action selector="lockButtonPressed:" destination="BYZ-38-t0r" id="9rs-5F-4kg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Vts-FR-vA2">
+                    <connections>
+                        <action selector="toggleAlbumArtworkVisible:" destination="BYZ-38-t0r" id="JWP-7n-b0a"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DqE-gV-Wq5">
+                    <connections>
+                        <action selector="toggleRepeatSong:" destination="BYZ-38-t0r" id="cfN-rt-J5W"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="21" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="battery.0" catalog="system" width="128" height="59"/>
+        <image name="eye" width="128" height="128"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="lock.open.fill" catalog="system" width="128" height="110"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="repeat" catalog="system" width="128" height="98"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
